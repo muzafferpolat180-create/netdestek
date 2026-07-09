@@ -1,33 +1,25 @@
-/* ===========================
-   NetDestek Kurumsal Web Sitesi
-=========================== */
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-}
-
-html{
     scroll-behavior:smooth;
 }
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f5f7fb;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f4f7fb;
     color:#222;
     line-height:1.6;
 }
 
-/* HEADER */
-
 header{
-    background:#0A3D91;
-    color:#fff;
-    position:sticky;
+    position:fixed;
     top:0;
-    z-index:1000;
-    box-shadow:0 2px 10px rgba(0,0,0,.15);
+    left:0;
+    width:100%;
+    background:#0a3d91;
+    box-shadow:0 4px 15px rgba(0,0,0,.15);
+    z-index:999;
 }
 
 .container{
@@ -44,35 +36,66 @@ header{
 }
 
 .logo{
-    height:65px;
+    width:140px;
+}
+
+nav{
+    display:flex;
+    gap:35px;
 }
 
 nav a{
     color:#fff;
     text-decoration:none;
-    margin-left:25px;
     font-weight:bold;
     transition:.3s;
 }
 
 nav a:hover{
-    color:#4fc3f7;
+    color:#59b7ff;
 }
 
-/* HERO */
-
 .hero{
-    width:90%;
-    max-width:1200px;
-    margin:70px auto;
+    min-height:100vh;
     display:flex;
     align-items:center;
     justify-content:space-between;
-    gap:50px;
+    gap:60px;
+    padding:140px 10% 80px;
+    background:#f4f7fb;
 }
 
 .hero-left{
     flex:1;
+}
+
+.hero-left h1{
+    font-size:58px;
+    color:#0a3d91;
+    margin-bottom:30px;
+    line-height:1.2;
+}
+
+.hero-left p{
+    font-size:24px;
+    color:#444;
+    margin-bottom:40px;
+}
+
+.btn{
+    display:inline-block;
+    padding:18px 40px;
+    background:#0a66ff;
+    color:#fff;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#084bb7;
+    transform:translateY(-3px);
 }
 
 .hero-right{
@@ -82,51 +105,21 @@ nav a:hover{
 
 .hero-right img{
     width:100%;
-    max-width:500px;
+    max-width:560px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.2);
 }
-
-.hero h1{
-    font-size:48px;
-    color:#0A3D91;
-    margin-bottom:20px;
-}
-
-.hero p{
-    font-size:20px;
-    color:#555;
-    margin-bottom:30px;
-}
-
-.btn{
-    display:inline-block;
-    background:#1565C0;
-    color:white;
-    padding:16px 35px;
-    border-radius:40px;
-    text-decoration:none;
-    font-weight:bold;
-    transition:.3s;
-}
-
-.btn:hover{
-    background:#0A3D91;
-    transform:translateY(-3px);
-}
-
-/* SECTIONS */
 
 section{
-    padding:80px 10%;
+    padding:90px 10%;
 }
 
 section h2{
     text-align:center;
-    font-size:36px;
-    color:#0A3D91;
+    font-size:40px;
+    color:#0a3d91;
     margin-bottom:50px;
 }
-
-/* HİZMETLER */
 
 .cards{
     display:grid;
@@ -135,7 +128,7 @@ section h2{
 }
 
 .card{
-    background:white;
+    background:#fff;
     padding:35px;
     border-radius:15px;
     box-shadow:0 10px 30px rgba(0,0,0,.08);
@@ -144,71 +137,88 @@ section h2{
 
 .card:hover{
     transform:translateY(-10px);
+    box-shadow:0 18px 40px rgba(0,0,0,.15);
 }
 
 .card h3{
-    color:#1565C0;
+    color:#0a3d91;
     margin-bottom:15px;
 }
-
-/* REFERANSLAR */
 
 .refs{
     display:flex;
     justify-content:center;
-    gap:80px;
+    gap:50px;
     flex-wrap:wrap;
-    align-items:center;
 }
 
 .refs img{
-    height:90px;
-    filter:grayscale(100%);
-    transition:.4s;
+    width:180px;
+    background:#fff;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
 }
 
 .refs img:hover{
-    filter:none;
     transform:scale(1.08);
 }
 
-/* HAKKIMIZDA */
+#hakkimizda{
+    background:#fff;
+    text-align:center;
+}
 
 #hakkimizda p{
     max-width:900px;
     margin:auto;
-    text-align:center;
-    font-size:19px;
-    color:#555;
+    font-size:20px;
 }
 
-/* İLETİŞİM */
-
 #iletisim{
-    background:#0A3D91;
-    color:white;
+    background:#0a3d91;
+    color:#fff;
     text-align:center;
 }
 
 #iletisim h2{
-    color:white;
+    color:#fff;
 }
 
 #iletisim p{
-    font-size:20px;
     margin:12px 0;
+    font-size:20px;
 }
 
-/* FOOTER */
-
 footer{
-    background:#061f4d;
-    color:white;
+    background:#082b63;
+    color:#fff;
     text-align:center;
     padding:25px;
 }
 
-/* MOBİL */
+.whatsapp{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    width:65px;
+    height:65px;
+    background:#25D366;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-size:32px;
+    box-shadow:0 10px 20px rgba(0,0,0,.25);
+    transition:.3s;
+}
+
+.whatsapp:hover{
+    transform:scale(1.1);
+}
 
 @media(max-width:900px){
 
@@ -217,24 +227,27 @@ footer{
     text-align:center;
 }
 
-.hero h1{
-    font-size:36px;
+.hero-left h1{
+    font-size:42px;
+}
+
+.hero-left p{
+    font-size:20px;
+}
+
+.nav{
+    flex-direction:column;
 }
 
 nav{
-    display:none;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top:20px;
+    gap:20px;
 }
 
 .logo{
-    margin:auto;
-}
-
-.refs{
-    gap:35px;
-}
-
-.refs img{
-    height:60px;
+    width:120px;
 }
 
 }
