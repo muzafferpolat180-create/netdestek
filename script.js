@@ -322,3 +322,73 @@ document.body.classList.add("loaded");
 console.log("NetDestek Premium Loaded");
 
 });
+
+/*==================================================
+NETDESTEK V4 PREMIUM
+PART 3
+Hero Parallax + Performance
+==================================================*/
+
+
+/*=========================
+    HERO PARALLAX
+=========================*/
+
+const hero = document.querySelector(".hero-right");
+
+if(hero){
+
+    let mouseX = 0;
+    let mouseY = 0;
+
+    document.addEventListener("mousemove",(e)=>{
+
+        mouseX = (e.clientX - window.innerWidth/2) / 45;
+        mouseY = (e.clientY - window.innerHeight/2) / 45;
+
+        requestAnimationFrame(()=>{
+
+            hero.style.transform =
+            `translate(${-mouseX}px,${-mouseY}px)`;
+
+        });
+
+    });
+
+}
+
+
+/*=========================
+    IMAGE HOVER EFFECT
+=========================*/
+
+const heroImage=document.querySelector(".hero-right img");
+
+if(heroImage){
+
+heroImage.addEventListener("mouseenter",()=>{
+
+heroImage.style.transition=".35s";
+
+heroImage.style.filter="brightness(1.05)";
+
+});
+
+heroImage.addEventListener("mouseleave",()=>{
+
+heroImage.style.filter="brightness(1)";
+
+});
+
+}
+
+
+/*=========================
+    PERFORMANCE
+=========================*/
+
+window.addEventListener("load",()=>{
+
+document.body.classList.add("loaded");
+
+});
