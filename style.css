@@ -1272,3 +1272,90 @@ transform:translateY(-4px);
 background:#1d4ed8;
 
 }
+
+/*=========================================
+HERO FLOAT ANIMATION
+=========================================*/
+
+.hero-right img{
+
+animation:heroFloat 6s ease-in-out infinite;
+
+transition:.4s ease;
+
+cursor:pointer;
+
+}
+
+.hero-right img:hover{
+
+transform:scale(1.04);
+
+filter:drop-shadow(0 25px 70px rgba(0,140,255,.45));
+
+}
+
+@keyframes heroFloat{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+}
+
+.hero-right{
+
+position:relative;
+
+}
+
+.hero-right::before{
+
+content:"";
+
+position:absolute;
+
+width:380px;
+
+height:380px;
+
+background:radial-gradient(circle,
+rgba(0,120,255,.22),
+transparent 70%);
+
+filter:blur(50px);
+
+z-index:-1;
+
+animation:heroGlow 5s ease-in-out infinite;
+
+}
+
+@keyframes heroGlow{
+
+0%,100%{
+
+transform:scale(1);
+
+opacity:.6;
+
+}
+
+50%{
+
+transform:scale(1.2);
+
+opacity:1;
+
+}
+
+}
+
