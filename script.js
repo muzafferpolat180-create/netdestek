@@ -238,3 +238,87 @@ link.classList.add("active");
 });
 
 });
+
+/*==================================================
+NETDESTEK V4 PREMIUM
+PART 3
+Hero Parallax + Performance
+==================================================*/
+
+
+/*=========================
+    HERO PARALLAX
+=========================*/
+
+const heroImage = document.querySelector(".hero-right img");
+
+if(heroImage){
+
+document.addEventListener("mousemove",(e)=>{
+
+const x=(window.innerWidth/2-e.clientX)/45;
+
+const y=(window.innerHeight/2-e.clientY)/45;
+
+heroImage.style.transform=
+
+`translate(${x}px,${y}px)`;
+
+});
+
+}
+
+
+/*=========================
+    PERFORMANCE
+=========================*/
+
+function throttle(fn,wait){
+
+let waiting=false;
+
+return function(){
+
+if(waiting) return;
+
+fn.apply(this,arguments);
+
+waiting=true;
+
+setTimeout(()=>{
+
+waiting=false;
+
+},wait);
+
+}
+
+}
+
+
+/*=========================
+    RESIZE
+=========================*/
+
+window.addEventListener("resize",
+
+throttle(()=>{
+
+console.log("NetDestek Responsive Ready");
+
+},250)
+
+);
+
+
+/*=========================
+    PAGE LOADED
+=========================*/
+
+window.addEventListener("load",()=>{
+
+document.body.classList.add("loaded");
+
+console.log("NetDestek Premium Loaded");
+
+});
