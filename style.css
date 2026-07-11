@@ -172,7 +172,7 @@ BUTTONS
     display:grid;
     grid-template-columns:1.1fr .9fr;
     gap:70px;
-    align-items:start;
+    align-items:center; /* Sol blok ile sağ bloğu dikey eksende kusursuz eşitlemek için center yapıldı */
 }
 
 /*==========================================================
@@ -280,26 +280,30 @@ STATISTICS
 }
 
 /*==========================================================
-RIGHT
+RIGHT - GÖRSELİN ÖLÇEKSİZLİĞİ VE BOYUTU DÜZENLENDİ
 ==========================================================*/
 
 .hero-right{
     display:flex;
-    justify-content:center;
-    align-items:flex-start;
-    padding-top:20px;
+    justify-content:flex-end;  /* Görseli sağ sınıra tam yaslayarak boşluk dengesi kuruldu */
+    align-items:center;
+    width:100%;
 }
 
 .hero-image{
     width:100%;
-    max-width:680px;
-    border-radius:30px;
-    box-shadow:0 35px 70px rgba(0,0,0,.16);
-    transition:.4s;
+    max-width:760px;          /* Başlığın hacmine denk gelecek şekilde genişletildi */
+    height:500px;             /* Dikeydeki basıklığı gidermek için ideal yükseklik atandı */
+    object-fit:cover;         /* Yükseklik değişirken resmin sünmesini ve bozulmasını engeller */
+    object-position:center;
+    border-radius:26px;
+    box-shadow:0 35px 75px rgba(15,23,42,.15), 0 15px 30px rgba(0,0,0,.05);
+    transition:transform .4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow .4s ease;
 }
 
 .hero-image:hover{
-    transform:translateY(-8px);
+    transform:translateY(-8px) scale(1.01); /* Hafif modern bir yükselme dokunuşu */
+    box-shadow:0 45px 85px rgba(15,23,42,.22);
 }
 
 /* ==========================================================
