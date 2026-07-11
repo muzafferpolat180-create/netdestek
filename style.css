@@ -264,7 +264,7 @@ BUTTONS
 
     gap:70px;
 
-    align-items:center;
+    align-items:start;
 
 }
 
@@ -450,7 +450,9 @@ RIGHT
 
     justify-content:center;
 
-    align-items:center;
+    align-items:flex-start;
+
+    padding-top:20px;
 
 }
 
