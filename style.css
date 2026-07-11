@@ -118,13 +118,46 @@ header.scrolled{
 LOGO
 =========================*/
 
-.logo{
-    width:175px;
+/* ==========================
+   LOGO
+========================== */
+
+.logo-wrap{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#fff;
+
+    padding:8px 18px;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.10);
+
     transition:.35s;
+
 }
 
-.logo:hover{
-    transform:scale(1.03);
+.logo-wrap:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.16);
+
+}
+
+.logo{
+
+    width:165px;
+
+    height:auto;
+
+    display:block;
+
 }
 
 /*=========================
