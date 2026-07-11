@@ -805,11 +805,34 @@ footer{
 
 footer h4{
 
-    margin-bottom:20px;
+font-size:22px;
 
+    font-weight:700;
+
+    color:#fff;
+
+    margin-bottom:28px;
+
+    position:relative;
 }
 
-footer ul{
+footer h4::after{
+
+    content:"";
+
+    width:45px;
+
+    height:3px;
+
+    background:#2ea8ff;
+
+    display:block;
+
+    margin-top:10px;
+
+    border-radius:20px;
+
+   footer ul{
 
     list-style:none;
 
@@ -830,6 +853,42 @@ footer a{
 footer a:hover{
 
     color:#49b8ff;
+
+}
+
+.footer-contact p{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:12px 0;
+
+    color:#d8e5ff;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.footer-contact p:hover{
+
+    color:#2ea8ff;
+
+    transform:translateX(6px);
+
+}
+
+.footer-contact i{
+
+    width:22px;
+
+    color:#2ea8ff;
+
+    text-align:center;
 
 }
 
