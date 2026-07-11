@@ -3,104 +3,95 @@
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetDestek | Network Kurulumu, Sunucu Çözümleri, Firewall, Web Tasarım ve Teknik Destek | İstanbul</title>
 
-<title>NetDestek | Network Kurulumu, Sunucu Çözümleri, Firewall, Web Tasarım ve Teknik Destek | İstanbul</title>
+    <meta name="description"
+        content="NetDestek; İstanbul Beylikdüzü merkezli olarak Network Kurulumu, Sunucu Çözümleri, Firewall, Siber Güvenlik, Kamera Sistemleri, Web Tasarım, Veri Yedekleme ve Teknik Destek hizmetleri sunmaktadır.">
 
-<meta name="description" content="NetDestek; İstanbul Beylikdüzü merkezli olarak Network Kurulumu, Sunucu Çözümleri, Firewall, Siber Güvenlik, Kamera Sistemleri, Web Tasarım, Veri Yedekleme ve Teknik Destek hizmetleri sunmaktadır.">
+    <meta name="keywords"
+        content="Network Kurulumu, Sunucu Kurulumu, Firewall, Teknik Destek, Web Tasarım, Kamera Sistemleri, Veri Yedekleme, Siber Güvenlik, İstanbul, Beylikdüzü">
 
-<meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow">
 
-<link rel="canonical" href="https://netdestek.tr/">
+    <meta name="author" content="NetDestek">
 
-<meta name="author" content="NetDestek">
+    <link rel="canonical" href="https://netdestek.tr/">
 
-<meta name="keywords" content="Network Kurulumu, Sunucu Kurulumu, Firewall, Teknik Destek, Web Tasarım, Kamera Sistemleri, Veri Yedekleme, Siber Güvenlik, İstanbul, Beylikdüzü">
+    <!-- Open Graph -->
 
-<!-- Open Graph -->
+    <meta property="og:title" content="NetDestek | Kurumsal BT Çözümleri">
 
-<meta property="og:title" content="NetDestek | Kurumsal BT Çözümleri">
+    <meta property="og:description"
+        content="Network Kurulumu, Sunucu Çözümleri, Firewall, Web Tasarım ve Teknik Destek">
 
-<meta property="og:description" content="Network Kurulumu, Sunucu Çözümleri, Firewall, Web Tasarım ve Teknik Destek">
+    <meta property="og:type" content="website">
 
-<meta property="og:type" content="website">
+    <meta property="og:url" content="https://netdestek.tr/">
 
-<meta property="og:url" content="https://netdestek.tr/">
+    <meta property="og:image" content="https://netdestek.tr/assets/logo.png">
 
-<meta property="og:image" content="https://netdestek.tr/assets/logo.png">
+    <meta property="og:locale" content="tr_TR">
 
-<meta property="og:locale" content="tr_TR">
+    <!-- Favicon -->
 
-<!-- Favicon -->
+    <link rel="icon" href="assets/favicon.png">
 
-<link rel="icon" href="assets/favicon.png">
+    <!-- CSS -->
 
-<!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 
-<link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
 
-<!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
 
-<!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Google Analytics -->
 
-<!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJ7KQG5EP7"></script>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-EJ7KQG5EP7"></script>
+    <script>
 
-<script>
+        window.dataLayer = window.dataLayer || [];
 
-window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
 
-function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-gtag('js', new Date());
+        gtag('config', 'G-EJ7KQG5EP7');
 
-gtag('config', 'G-EJ7KQG5EP7');
+    </script>
 
-</script>
+    <!-- Schema -->
 
-<!-- Schema.org -->
-
-<script type="application/ld+json">
+    <script type="application/ld+json">
 
 {
-
 "@context":"https://schema.org",
-
 "@type":"LocalBusiness",
-
 "name":"NetDestek",
-
 "url":"https://netdestek.tr",
-
 "logo":"https://netdestek.tr/assets/logo.png",
-
 "telephone":"+905421857275",
-
 "email":"info@netdestek.tr",
 
 "address":{
-
 "@type":"PostalAddress",
-
 "streetAddress":"Barış Mah. Koru Cd. Ortahisar B2/28",
-
 "addressLocality":"Beylikdüzü",
-
 "addressRegion":"İstanbul",
-
 "addressCountry":"TR"
-
 }
 
 }
@@ -111,459 +102,769 @@ gtag('config', 'G-EJ7KQG5EP7');
 
 <body>
 
-<header>
+<div id="progress-bar"></div>
 
-<div class="container nav">
+<!-- ================= HEADER ================= -->
 
-<a href="#anasayfa">
+<header id="header">
 
-<img src="assets/logo.png" class="logo" alt="NetDestek Logo">
+    <div class="container nav">
 
-</a>
+        <a href="#anasayfa">
 
-<nav>
+            <img src="assets/logo.png"
 
-<a href="#anasayfa">Ana Sayfa</a>
+                class="logo"
 
-<a href="#hizmetler">Hizmetler</a>
+                alt="NetDestek Logo">
 
-<a href="#neden">Neden Biz?</a>
+        </a>
 
-<a href="#referanslar">Referanslar</a>
+        <nav>
 
-<a href="#hakkimizda">Hakkımızda</a>
+            <a href="#anasayfa" class="active">Ana Sayfa</a>
 
-<a href="#iletisim">İletişim</a>
+            <a href="#hizmetler">Hizmetler</a>
 
-</nav>
+            <a href="#neden">Neden Biz?</a>
 
-</div>
+            <a href="#referanslar">Referanslar</a>
+
+            <a href="#hakkimizda">Hakkımızda</a>
+
+            <a href="#iletisim">İletişim</a>
+
+        </nav>
+
+        <div class="nav-buttons">
+
+            <a href="tel:+905421857275"
+
+                class="call-btn">
+
+                <i class="fa-solid fa-phone"></i>
+
+                Ara
+
+            </a>
+
+            <a href="https://wa.me/905421857275"
+
+                target="_blank"
+
+                class="wp-btn">
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                WhatsApp
+
+            </a>
+
+        </div>
+
+    </div>
 
 </header>
 
+<!-- ================= HERO ================= -->
+
 <section class="hero" id="anasayfa">
 
-<div class="hero-left">
+    <div class="container hero-grid">
 
-<span class="badge">
+        <!-- Sol Taraf -->
 
-Kurumsal BT Çözümleri
+        <div class="hero-left">
 
-</span>
+            <span class="badge">
+                Kurumsal BT Çözümleri
+            </span>
 
-<h1>
+            <h1>
 
-İşletmeniz İçin<br>
+                İşletmenizin
 
-Güvenilir BT<br>
+                <br>
 
-Çözüm Ortağı
+                Teknoloji
 
-</h1>
+                <br>
 
-<p>
+                Altyapısını
 
-Network Kurulumu • Sunucu Çözümleri • Firewall<br>
+                <br>
 
-Web Tasarım • Teknik Destek • Kamera Sistemleri
+                Güçlendirin.
 
-</p>
+            </h1>
 
-<div class="hero-buttons">
+            <p>
 
-<a href="#iletisim" class="btn">
+                Network Kurulumu • Sunucu Çözümleri • Firewall • Siber Güvenlik
 
-Teklif Al
+                <br><br>
 
-</a>
+                Kamera Sistemleri • Web Tasarım • Teknik Destek • Veri Yedekleme
 
-<a href="https://wa.me/905421857275"
+            </p>
 
-target="_blank"
+            <div class="hero-buttons">
 
-class="btn btn2">
+                <a href="#iletisim" class="btn">
 
-WhatsApp
+                    Teklif Al
 
-</a>
+                </a>
 
-</div>
+                <a href="https://wa.me/905421857275"
 
-</div>
+                    target="_blank"
 
-<div class="hero-right">
+                    class="btn btn2">
 
-<img src="assets/hero.png" alt="NetDestek Kurumsal BT Hizmetleri">
+                    WhatsApp
 
-</div>
+                </a>
+
+            </div>
+
+            <!-- İSTATİSTİKLER -->
+
+            <div class="hero-stats">
+
+                <div class="stat-box">
+
+                    <h3 class="counter" data-target="25">
+
+                        25+
+
+                    </h3>
+
+                    <span>
+
+                        Yıllık Deneyim
+
+                    </span>
+
+                </div>
+
+                <div class="stat-box">
+
+                    <h3 class="counter" data-target="12">
+
+                        12+
+
+                    </h3>
+
+                    <span>
+
+                        Kurumsal Müşteri
+
+                    </span>
+
+                </div>
+
+                <div class="stat-box">
+
+                    <h3 class="counter" data-target="450">
+
+                        450+
+
+                    </h3>
+
+                    <span>
+
+                        Tamamlanan Proje
+
+                    </span>
+
+                </div>
+
+                <div class="stat-box">
+
+                    <h3>
+
+                        7/24
+
+                    </h3>
+
+                    <span>
+
+                        Teknik Destek
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Sağ Taraf -->
+
+        <div class="hero-right">
+
+            <img
+
+                src="assets/hero.png"
+
+                alt="NetDestek Kurumsal BT Çözümleri"
+
+                class="hero-image">
+
+        </div>
+
+    </div>
 
 </section>
+
+<!-- ================= HİZMETLER ================= -->
 
 <section id="hizmetler">
 
-<div class="container">
+    <div class="container">
 
-<h2>Hizmetlerimiz</h2>
+        <div class="section-title">
 
-<div class="cards">
+            <span>Hizmetlerimiz</span>
 
-<div class="card">
+            <h2>Profesyonel BT Çözümleri</h2>
 
-<i class="fa-solid fa-globe"></i>
+            <p>
 
-<h3>Web Tasarım</h3>
+                Kurumsal işletmeler için uçtan uca bilişim çözümleri sunuyoruz.
 
-<p>
+            </p>
 
-SEO uyumlu, hızlı ve modern kurumsal web siteleri geliştiriyoruz.
+        </div>
 
-</p>
+        <div class="cards">
 
-</div>
+            <div class="card">
 
-<div class="card">
+                <i class="fa-solid fa-network-wired"></i>
 
-<i class="fa-solid fa-network-wired"></i>
+                <h3>Network Kurulumu</h3>
 
-<h3>Network Kurulumu</h3>
+                <p>
 
-<p>
+                    Switch, Router, Access Point, VLAN ve kurumsal ağ altyapıları.
 
-Kurumsal ağ altyapılarınızı profesyonel şekilde kuruyoruz.
+                </p>
 
-</p>
+            </div>
 
-</div>
+            <div class="card">
 
-<div class="card">
+                <i class="fa-solid fa-server"></i>
 
-<i class="fa-solid fa-server"></i>
+                <h3>Sunucu Sistemleri</h3>
 
-<h3>Sunucu Çözümleri</h3>
+                <p>
 
-<p>
+                    Windows Server, Linux Server, Active Directory ve sanallaştırma.
 
-Windows Server, Linux Server, Active Directory ve sanallaştırma çözümleri.
+                </p>
 
-</p>
+            </div>
 
-</div>
+            <div class="card">
 
-<div class="card">
+                <i class="fa-solid fa-shield-halved"></i>
 
-<i class="fa-solid fa-shield-halved"></i>
+                <h3>Firewall</h3>
 
-<h3>Firewall</h3>
+                <p>
 
-<p>
+                    Fortinet, Sophos ve pfSense güvenlik çözümleri.
 
-Fortinet, Sophos, pfSense ve güvenlik altyapıları kuruyoruz.
+                </p>
 
-</p>
+            </div>
 
-</div>
+            <div class="card">
 
-<div class="card">
+                <i class="fa-solid fa-cloud"></i>
 
-<i class="fa-solid fa-cloud"></i>
+                <h3>Cloud Çözümleri</h3>
 
-<h3>Cloud Çözümleri</h3>
+                <p>
 
-<p>
+                    Microsoft 365, Bulut Sunucu ve uzak erişim çözümleri.
 
-Microsoft 365, bulut yedekleme ve uzak erişim çözümleri.
+                </p>
 
-</p>
+            </div>
 
-</div>
+            <div class="card">
 
-<div class="card">
+                <i class="fa-solid fa-video"></i>
 
-<i class="fa-solid fa-video"></i>
+                <h3>IP Kamera</h3>
 
-<h3>Kamera Sistemleri</h3>
+                <p>
 
-<p>
+                    Kurumsal IP Kamera ve kayıt sistemleri kurulumu.
 
-IP kamera ve kayıt sistemleri kurulumu ile güvenliği artırıyoruz.
+                </p>
 
-</p>
+            </div>
 
-</div>
+            <div class="card">
 
-<div class="card">
+                <i class="fa-solid fa-database"></i>
 
-<i class="fa-solid fa-headset"></i>
+                <h3>Veri Yedekleme</h3>
 
-<h3>Teknik Destek</h3>
+                <p>
 
-<p>
+                    Yerel ve Bulut veri yedekleme çözümleri.
 
-Yerinde ve uzaktan hızlı teknik destek hizmeti sunuyoruz.
+                </p>
 
-</p>
+            </div>
 
-</div>
+            <div class="card">
 
-<div class="card">
+                <i class="fa-solid fa-headset"></i>
 
-<i class="fa-solid fa-database"></i>
+                <h3>Teknik Destek</h3>
 
-<h3>Veri Yedekleme</h3>
+                <p>
 
-<p>
+                    Yerinde ve uzaktan 7/24 teknik destek hizmeti.
 
-İşletmenizin verilerini güvenli ve düzenli şekilde yedekliyoruz.
+                </p>
 
-</p>
+            </div>
 
-</div>
+            <div class="card">
 
-</div>
+                <i class="fa-solid fa-globe"></i>
 
-</div>
+                <h3>Web Tasarım</h3>
+
+                <p>
+
+                    SEO uyumlu kurumsal web sitesi tasarımı.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
+
+<!-- ================= NEDEN NETDESTEK ================= -->
 
 <section id="neden">
 
-<div class="container">
+    <div class="container">
 
-<h2>Neden NetDestek?</h2>
+        <div class="section-title">
 
-<div class="cards">
+            <span>Neden Biz?</span>
 
-<div class="card">
+            <h2>Neden NetDestek?</h2>
 
-<h3>⚡ Hızlı Müdahale</h3>
+            <p>
 
-<p>
+                Deneyim, güven ve profesyonel destek anlayışımızla işletmenizin yanındayız.
 
-Acil BT sorunlarına hızlı ve etkili çözümler sunuyoruz.
+            </p>
 
-</p>
+        </div>
 
-</div>
+        <div class="cards">
 
-<div class="card">
+            <div class="card">
 
-<h3>🛡️ Güvenilir Hizmet</h3>
+                <i class="fa-solid fa-bolt"></i>
 
-<p>
+                <h3>Hızlı Müdahale</h3>
 
-Kurumsal işletmeler için sürdürülebilir ve güvenli BT altyapıları kuruyoruz.
+                <p>
 
-</p>
+                    Acil durumlarda hızlı ve etkili teknik destek.
 
-</div>
+                </p>
 
-<div class="card">
+            </div>
 
-<h3>💼 Profesyonel Deneyim</h3>
+            <div class="card">
 
-<p>
+                <i class="fa-solid fa-shield"></i>
 
-İşletmenize özel planlanan teknoloji çözümleri ile verimliliği artırıyoruz.
+                <h3>Güvenilir Altyapı</h3>
 
-</p>
+                <p>
 
-</div>
+                    Güvenli ve sürdürülebilir bilişim altyapıları.
 
-</div>
+                </p>
 
-</div>
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-user-tie"></i>
+
+                <h3>Profesyonel Hizmet</h3>
+
+                <p>
+
+                    İşletmenize özel planlama ve kurumsal çözümler.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
+
+<!-- ================= REFERANSLAR ================= -->
 
 <section id="referanslar">
 
-<div class="container">
+    <div class="container">
 
-<h2>Referanslarımız</h2>
+        <div class="section-title">
 
-<div class="refs">
+            <span>Referanslarımız</span>
 
-<img src="assets/hekimoglu.png" alt="Hekimoğlu CNC Referansı">
+            <h2>Bize Güvenen Firmalar</h2>
 
-<img src="assets/flasa.png" alt="Flasa Endüstriyel Referansı">
+        </div>
 
-</div>
+        <div class="refs">
 
-</div>
+            <img src="assets/hekimoglu.png" alt="Hekimoğlu CNC">
+
+            <img src="assets/flasa.png" alt="Flasa Endüstriyel">
+
+        </div>
+
+    </div>
 
 </section>
+
+<!-- ================= HAKKIMIZDA ================= -->
 
 <section id="hakkimizda">
 
-<div class="container">
+    <div class="container">
 
-<h2>Hakkımızda</h2>
+        <div class="section-title">
 
-<p>
+            <span>Hakkımızda</span>
 
-NetDestek; İstanbul Beylikdüzü merkezli olarak işletmelere Network Kurulumu,
-Sunucu Çözümleri, Firewall, Siber Güvenlik, Kamera Sistemleri,
-Web Tasarım, Bulut Çözümleri ve Teknik Destek alanlarında
-profesyonel bilişim hizmetleri sunmaktadır.
+            <h2>Kurumsal BT Çözüm Ortağınız</h2>
 
-Müşterilerimize güvenilir, hızlı ve sürdürülebilir BT çözümleri
-sunarak iş süreçlerini kesintisiz hale getirmeyi hedefliyoruz.
+        </div>
 
-</p>
+        <div class="about-grid">
 
-</div>
+            <div class="about-text">
+
+                <p>
+
+                    NetDestek olarak İstanbul Beylikdüzü merkezli faaliyet göstermekteyiz.
+
+                    Kurumsal firmalara Network Kurulumu, Sunucu Sistemleri,
+
+                    Firewall, Siber Güvenlik, Microsoft 365,
+
+                    Kamera Sistemleri, Veri Yedekleme,
+
+                    Web Tasarım ve Teknik Destek hizmetleri sunuyoruz.
+
+                </p>
+
+                <p>
+
+                    Amacımız işletmelerin teknoloji altyapısını
+
+                    güvenli, sürdürülebilir ve yüksek performanslı hale getirmektir.
+
+                </p>
+
+            </div>
+
+            <div class="about-list">
+
+                <div>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    Network Kurulumu
+
+                </div>
+
+                <div>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    Sunucu Sistemleri
+
+                </div>
+
+                <div>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    Firewall
+
+                </div>
+
+                <div>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    Siber Güvenlik
+
+                </div>
+
+                <div>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    Microsoft 365
+
+                </div>
+
+                <div>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    Kamera Sistemleri
+
+                </div>
+
+                <div>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    Veri Yedekleme
+
+                </div>
+
+                <div>
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    7/24 Teknik Destek
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
+
+<!-- ================= İLETİŞİM ================= -->
 
 <section id="iletisim">
 
-<div class="container">
+    <div class="container">
 
-<h2>İletişim</h2>
+        <div class="section-title">
 
-<div class="contact-grid">
+            <span>İletişim</span>
 
-<div class="contact-card">
+            <h2>Bizimle İletişime Geçin</h2>
 
-<h3>📞 Telefon</h3>
+        </div>
 
-<p><a href="tel:+905421857275">+90 542 185 72 75</a></p>
+        <div class="contact-grid">
 
-</div>
+            <div class="contact-card">
 
-<div class="contact-card">
+                <i class="fa-solid fa-phone"></i>
 
-<h3>📧 E-Posta</h3>
+                <h3>Telefon</h3>
 
-<p><a href="mailto:info@netdestek.tr">info@netdestek.tr</a></p>
+                <a href="tel:+905421857275">
 
-</div>
+                    +90 542 185 72 75
 
-<div class="contact-card">
+                </a>
 
-<h3>🌐 Web Sitesi</h3>
+            </div>
 
-<p><a href="https://netdestek.tr">https://netdestek.tr</a></p>
+            <div class="contact-card">
 
-</div>
+                <i class="fa-solid fa-envelope"></i>
 
-<div class="contact-card">
+                <h3>E-Posta</h3>
 
-<h3>📍 Adres</h3>
+                <a href="mailto:info@netdestek.tr">
 
-<p>
+                    info@netdestek.tr
 
-Barış Mahallesi<br>
+                </a>
 
-Koru Caddesi Ortahisar B2/28<br>
+            </div>
 
-Beylikdüzü / İstanbul
+            <div class="contact-card">
 
-</p>
+                <i class="fa-solid fa-location-dot"></i>
 
-</div>
+                <h3>Adres</h3>
 
-</div>
+                <p>
 
-</div>
+                    Barış Mahallesi
+
+                    <br>
+
+                    Koru Caddesi Ortahisar B2/28
+
+                    <br>
+
+                    Beylikdüzü / İstanbul
+
+                </p>
+
+            </div>
+
+            <div class="contact-card">
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                <h3>WhatsApp</h3>
+
+                <a href="https://wa.me/905421857275" target="_blank">
+
+                    Mesaj Gönder
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
+
+<!-- ================= HARİTA ================= -->
 
 <section id="harita">
 
-<iframe
+    <iframe
 
-src="https://www.google.com/maps?q=Beylikdüzü%20İstanbul&output=embed"
+        src="https://www.google.com/maps?q=Beylikdüzü%20İstanbul&output=embed"
 
-loading="lazy"
+        loading="lazy"
 
-allowfullscreen
+        allowfullscreen
 
-referrerpolicy="no-referrer-when-downgrade">
+        referrerpolicy="no-referrer-when-downgrade">
 
-</iframe>
+    </iframe>
 
 </section>
 
+<!-- ================= FOOTER ================= -->
+
 <footer>
 
-<div class="container footer-grid">
+    <div class="container footer-grid">
 
-<div>
+        <div>
 
-<img src="assets/logo.png"
+            <img
 
-class="footer-logo"
+                src="assets/logo.png"
 
-alt="NetDestek Logo">
+                class="footer-logo"
 
-<p>
+                alt="NetDestek Logo">
 
-Teknolojiye Destek,<br>
+            <p>
 
-Size Çözüm
+                Teknolojiye Destek,
 
-</p>
+                <br>
 
-</div>
+                Size Çözüm.
 
-<div>
+            </p>
 
-<h4>Hızlı Menü</h4>
+        </div>
 
-<ul>
+        <div>
 
-<li><a href="#anasayfa">Ana Sayfa</a></li>
+            <h4>Hızlı Menü</h4>
 
-<li><a href="#hizmetler">Hizmetler</a></li>
+            <ul>
 
-<li><a href="#neden">Neden Biz?</a></li>
+                <li><a href="#anasayfa">Ana Sayfa</a></li>
 
-<li><a href="#referanslar">Referanslar</a></li>
+                <li><a href="#hizmetler">Hizmetler</a></li>
 
-<li><a href="#hakkimizda">Hakkımızda</a></li>
+                <li><a href="#neden">Neden Biz?</a></li>
 
-<li><a href="#iletisim">İletişim</a></li>
+                <li><a href="#referanslar">Referanslar</a></li>
 
-</ul>
+                <li><a href="#hakkimizda">Hakkımızda</a></li>
 
-</div>
+                <li><a href="#iletisim">İletişim</a></li>
 
-<div>
+            </ul>
 
-<h4>İletişim</h4>
+        </div>
 
-<p>📞 +90 542 185 72 75</p>
+        <div>
 
-<p>📧 info@netdestek.tr</p>
+            <h4>İletişim</h4>
 
-<p>🌐 https://netdestek.tr</p>
+            <p>📞 +90 542 185 72 75</p>
 
-<p>📍 Beylikdüzü / İstanbul</p>
+            <p>📧 info@netdestek.tr</p>
 
-</div>
+            <p>🌐 www.netdestek.tr</p>
 
-</div>
+            <p>📍 Beylikdüzü / İstanbul</p>
 
-<div class="copyright">
+        </div>
 
-© 2026 NetDestek | Tüm Hakları Saklıdır.
+    </div>
 
-</div>
+    <div class="copyright">
+
+        © 2026 NetDestek | Tüm Hakları Saklıdır.
+
+    </div>
 
 </footer>
 
+<button id="backToTop" aria-label="Yukarı Çık">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
 <a
 
-href="https://wa.me/905421857275"
+    href="https://wa.me/905421857275"
 
-target="_blank"
+    target="_blank"
 
-class="whatsapp"
+    class="whatsapp"
 
-aria-label="WhatsApp ile İletişim">
+    aria-label="WhatsApp">
 
-<i class="fa-brands fa-whatsapp"></i>
+    <i class="fa-brands fa-whatsapp"></i>
 
 </a>
 
@@ -572,3 +873,4 @@ aria-label="WhatsApp ile İletişim">
 </body>
 
 </html>
+
