@@ -64,13 +64,13 @@ header.scrolled{
     justify-content:space-between;
 }
 
-/* DÜZENLENEN LOGO ALANI */
+/* ÜST LOGO - DÜZENLENDİ */
 .logo{
     width: 170px;
     background: #ffffff;        /* Arka plan beyaz yapıldı */
-    padding: 8px 18px;          /* İç boşluk verilerek kapsül formu oluşturuldu */
+    padding: 8px 18px;          /* İç boşluk ile kapsül formu verildi */
     border-radius: 50px;        /* Köşeler tamamen ovalleştirildi */
-    display: flex;              /* Logoyu dikey ve yatayda ortalamak için */
+    display: flex;              /* Dikey ve yatayda kusursuz ortalama */
     align-items: center;
     justify-content: center;
 }
@@ -573,9 +573,16 @@ footer{
     gap:70px;
 }
 
+/* ALT LOGO - DÜZENLENDİ */
 .footer-logo{
     width:180px;
     margin-bottom:22px;
+    background: #ffffff;        /* Arka plan beyaz yapıldı */
+    padding: 8px 18px;          /* İç boşluk verilerek kapsül formu oluşturuldu */
+    border-radius: 50px;        /* Köşeler tamamen ovalleştirildi */
+    display: flex;              /* Logoyu dikey ve yatayda ortalamak için */
+    align-items: center;
+    justify-content: center;
 }
 
 footer h4{
@@ -821,9 +828,9 @@ footer a:hover{
         text-align:center;
     }
 
+    /* MOBİL İÇİN ALT LOGO AYARI */
     .footer-logo{
-        margin:auto;
-        margin-bottom:25px;
+        margin: 0 auto 25px auto;   /* Mobilde logonun altındaki boşluk dengelendi ve ortalandı */
     }
 
     .footer-contact p{
@@ -844,10 +851,10 @@ footer a:hover{
         height:78px;
     }
 
-    /* MOBİL İÇİN DÜZENLENEN LOGO ALANI */
+    /* MOBİL İÇİN ÜST LOGO AYARI */
     .logo{
         width:145px;
-        padding: 6px 14px; /* Mobilde taşma yapmaması için iç boşluk dengelendi */
+        padding: 6px 14px;          /* Mobilde taşma yapmaması için iç boşluk daraltıldı */
     }
 
     nav{
