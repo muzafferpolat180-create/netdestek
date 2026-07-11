@@ -375,13 +375,13 @@ section h2{
 
     display:grid;
 
-    grid-template-columns:1.1fr .9fr;
+    grid-template-columns:48% 52%;
 
     align-items:center;
 
-    gap:70px;
+    gap:20px;
 
-    padding-top:170px;
+    padding-top:140px;
 
 }
 
@@ -443,7 +443,11 @@ section h2{
 
     position:relative;
 
-    text-align:center;
+    display:flex;
+
+    justify-content:flex-end;
+
+    align-items:center;
 
 }
 
@@ -451,11 +455,11 @@ section h2{
 
     width:100%;
 
-    max-width:620px;
+    max-width:900px;
 
-    border-radius:28px;
+    border-radius:0;
 
-    box-shadow:0 25px 60px rgba(0,0,0,.22);
+    box-shadow:none;
 
     transition:.5s;
 
@@ -1323,9 +1327,9 @@ content:"";
 
 position:absolute;
 
-width:380px;
+width:700px;
 
-height:380px;
+height:700px;
 
 background:radial-gradient(circle,
 rgba(0,120,255,.22),
@@ -1358,4 +1362,3 @@ opacity:1;
 }
 
 }
-
