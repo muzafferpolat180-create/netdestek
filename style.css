@@ -277,27 +277,31 @@ nav a.active::after{
 
 .badge{
 
-   display:inline-flex;
+display:inline-flex;
 
 align-items:center;
 
-padding:14px 28px;
+justify-content:center;
 
-background:linear-gradient(135deg,#dbeafe,#bfdbfe);
+padding:12px 22px;
 
-border:1px solid rgba(59,130,246,.15);
+background:#dbeafe;
+
+border:1px solid #bfdbfe;
 
 border-radius:50px;
 
-font-size:15px;
+color:#2563eb;
+
+font-size:14px;
 
 font-weight:700;
 
-letter-spacing:.5px;
+width:fit-content;
 
-color:#2563eb;
+margin-bottom:28px;
 
-box-shadow:0 10px 25px rgba(59,130,246,.12);
+box-shadow:0 10px 25px rgba(59,130,246,.10);
 
 }
 
