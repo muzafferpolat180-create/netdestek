@@ -241,7 +241,7 @@ nav a.active::after{
 
 .hero{
 
-    padding-top:170px;
+    padding-top:120px;
 
     padding-bottom:110px;
 
@@ -397,7 +397,7 @@ nav a.active::after{
 
 .stat-box h3{
 
-    font-size:46px;
+    font-size:54px;
 
     color:#2ea8ff;
 
@@ -433,7 +433,7 @@ nav a.active::after{
 
     width:100%;
 
-    max-width:620px;
+    max-width:720px;
 
     border-radius:28px;
 
@@ -1065,7 +1065,7 @@ grid-template-columns:1fr;
 
 .stat-box{
 
-padding:24px;
+padding:35px 25px;
 
 }
 
