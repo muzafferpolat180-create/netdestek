@@ -1408,6 +1408,1352 @@ z-index:5;
 
 }
 
+/*==================================================
+            HERO V2 - PART 1
+==================================================*/
+
+.hero{
+    position:relative;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+    background:
+        radial-gradient(circle at 15% 20%,rgba(0,162,255,.18),transparent 30%),
+        radial-gradient(circle at 85% 80%,rgba(0,90,255,.20),transparent 35%),
+        linear-gradient(135deg,#04111f 0%,#071b35 40%,#0b2d57 100%);
+    color:#fff;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background-image:
+        linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),
+        linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);
+    background-size:60px 60px;
+    opacity:.35;
+    animation:gridMove 25s linear infinite;
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    width:900px;
+    height:900px;
+    right:-250px;
+    top:-180px;
+    background:radial-gradient(circle,rgba(0,180,255,.15),transparent 70%);
+    filter:blur(80px);
+    pointer-events:none;
+}
+
+.hero-bg{
+    position:absolute;
+    inset:0;
+    overflow:hidden;
+}
+
+.grid{
+    position:absolute;
+    inset:0;
+}
+
+.glow{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(90px);
+    opacity:.5;
+}
+
+.glow1{
+    width:420px;
+    height:420px;
+    background:#00a8ff;
+    top:-120px;
+    left:-120px;
+}
+
+.glow2{
+    width:520px;
+    height:520px;
+    background:#1d4ed8;
+    right:-150px;
+    bottom:-150px;
+}
+
+.hero-wrapper{
+    position:relative;
+    z-index:5;
+    width:100%;
+    display:grid;
+    grid-template-columns:1.05fr .95fr;
+    align-items:center;
+    gap:80px;
+}
+
+.hero-content{
+    max-width:650px;
+}
+
+.hero-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:12px 20px;
+    border:1px solid rgba(255,255,255,.12);
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(20px);
+    border-radius:40px;
+    font-size:14px;
+    color:#b7d8ff;
+    margin-bottom:28px;
+}
+
+.hero-badge i{
+    color:#38bdf8;
+}
+
+.hero h1{
+    font-size:68px;
+    line-height:1.08;
+    font-weight:800;
+    letter-spacing:-2px;
+    margin-bottom:28px;
+}
+
+.hero h1 span{
+    background:linear-gradient(90deg,#45d0ff,#7dd3fc,#60a5fa);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.hero p{
+    font-size:19px;
+    line-height:1.9;
+    color:#c8d6eb;
+    margin-bottom:40px;
+    max-width:560px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+    margin-bottom:50px;
+}
+
+.hero-buttons .btn{
+    padding:16px 34px;
+    border-radius:14px;
+    font-weight:600;
+    transition:.35s;
+    text-decoration:none;
+}
+
+.btn-primary{
+    background:#0ea5e9;
+    color:#fff;
+    box-shadow:0 15px 35px rgba(14,165,233,.35);
+}
+
+.btn-primary:hover{
+    transform:translateY(-4px);
+    box-shadow:0 20px 45px rgba(14,165,233,.45);
+}
+
+.btn-outline{
+    border:1px solid rgba(255,255,255,.18);
+    background:rgba(255,255,255,.05);
+    color:#fff;
+    backdrop-filter:blur(18px);
+}
+
+.btn-outline:hover{
+    background:rgba(255,255,255,.12);
+}
+
+.hero-stats{
+    display:flex;
+    gap:45px;
+}
+
+.hero-stats div h3{
+    font-size:34px;
+    color:#38bdf8;
+    margin-bottom:6px;
+}
+
+.hero-stats span{
+    color:#b8c7d9;
+    font-size:14px;
+}
+
+@keyframes gridMove{
+
+    from{
+        transform:translateY(0);
+    }
+
+    to{
+        transform:translateY(60px);
+    }
+
+}
+
+/*==================================================
+            HERO V2 - PART 2
+            Globe + Network Scene
+==================================================*/
+
+.hero-visual{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:650px;
+}
+
+.network-scene{
+    position:relative;
+    width:560px;
+    height:560px;
+}
+
+/* ================= PLANET ================= */
+
+.planet{
+    position:absolute;
+    inset:0;
+    margin:auto;
+    width:340px;
+    height:340px;
+    border-radius:50%;
+
+    background:
+        radial-gradient(circle at 30% 30%,
+        rgba(255,255,255,.25),
+        rgba(255,255,255,.05) 18%,
+        rgba(30,120,255,.35) 45%,
+        rgba(0,60,140,.95) 100%);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    box-shadow:
+        0 0 80px rgba(0,170,255,.35),
+        inset 0 0 60px rgba(255,255,255,.08);
+
+    overflow:hidden;
+
+    animation:
+        floatPlanet 8s ease-in-out infinite;
+}
+
+/* Dünya üzerindeki çizgiler */
+
+.planet::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    repeating-linear-gradient(
+
+    0deg,
+
+    transparent 0px,
+
+    transparent 18px,
+
+    rgba(255,255,255,.08) 19px,
+
+    transparent 20px
+
+    );
+
+    opacity:.6;
+
+}
+
+.planet::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    repeating-linear-gradient(
+
+    90deg,
+
+    transparent 0,
+
+    transparent 22px,
+
+    rgba(255,255,255,.05) 23px,
+
+    transparent 24px
+
+    );
+
+}
+
+/* ================= RINGS ================= */
+
+.ring{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    border:1px solid rgba(100,200,255,.18);
+
+    left:50%;
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+}
+
+.ring1{
+
+    width:370px;
+    height:370px;
+
+    animation:spin 24s linear infinite;
+
+}
+
+.ring2{
+
+    width:430px;
+    height:430px;
+
+    animation:spinReverse 32s linear infinite;
+
+}
+
+.ring3{
+
+    width:500px;
+    height:500px;
+
+    animation:spin 40s linear infinite;
+
+}
+
+/* ================= SVG ================= */
+
+.network-lines{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+}
+
+.network-lines line{
+
+    stroke:#49c7ff;
+
+    stroke-width:2;
+
+    stroke-linecap:round;
+
+    opacity:.35;
+
+    stroke-dasharray:10 12;
+
+    animation:dashMove 6s linear infinite;
+
+}
+
+/* ================= NODES ================= */
+
+.node{
+
+    position:absolute;
+
+    width:16px;
+
+    height:16px;
+
+    border-radius:50%;
+
+    background:#57d4ff;
+
+    box-shadow:
+
+    0 0 18px #57d4ff,
+
+    0 0 40px rgba(87,212,255,.7);
+
+    animation:pulseNode 2.8s infinite;
+
+}
+
+.n1{
+
+    left:245px;
+
+    top:95px;
+
+}
+
+.n2{
+
+    left:110px;
+
+    top:205px;
+
+}
+
+.n3{
+
+    right:105px;
+
+    top:200px;
+
+}
+
+.n4{
+
+    left:170px;
+
+    bottom:105px;
+
+}
+
+.n5{
+
+    right:185px;
+
+    bottom:95px;
+
+}
+
+/* ================= FLOAT GLOW ================= */
+
+.network-scene::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:540px;
+
+    height:540px;
+
+    left:10px;
+
+    top:10px;
+
+    border-radius:50%;
+
+    background:
+
+    radial-gradient(circle,
+
+    rgba(0,180,255,.12),
+
+    transparent 70%);
+
+    filter:blur(40px);
+
+}
+
+/* ================= ANIMATIONS ================= */
+
+@keyframes floatPlanet{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes spin{
+
+    from{
+
+        transform:translate(-50%,-50%) rotate(0deg);
+
+    }
+
+    to{
+
+        transform:translate(-50%,-50%) rotate(360deg);
+
+    }
+
+}
+
+@keyframes spinReverse{
+
+    from{
+
+        transform:translate(-50%,-50%) rotate(360deg);
+
+    }
+
+    to{
+
+        transform:translate(-50%,-50%) rotate(0deg);
+
+    }
+
+}
+
+@keyframes pulseNode{
+
+    0%{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+    50%{
+
+        transform:scale(1.35);
+
+        opacity:.6;
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+@keyframes dashMove{
+
+    from{
+
+        stroke-dashoffset:0;
+
+    }
+
+    to{
+
+        stroke-dashoffset:-44;
+
+    }
+
+}
+
+/*==================================================
+            HERO V2 - PART 3
+      Glass Cards + Premium Effects
+==================================================*/
+
+/*------------------------------------
+        Floating Cards
+------------------------------------*/
+
+.hero-card{
+
+    position:absolute;
+
+    width:180px;
+
+    padding:18px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    backdrop-filter:blur(22px);
+
+    box-shadow:
+    0 25px 50px rgba(0,0,0,.25);
+
+    transition:.4s;
+
+    z-index:20;
+
+}
+
+.hero-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#38bdf8;
+
+    box-shadow:
+    0 25px 60px rgba(0,170,255,.25);
+
+}
+
+.hero-card i{
+
+    font-size:28px;
+
+    color:#38bdf8;
+
+    margin-bottom:12px;
+
+}
+
+.hero-card h4{
+
+    color:#fff;
+
+    font-size:18px;
+
+    margin-bottom:8px;
+
+}
+
+.hero-card p{
+
+    font-size:14px;
+
+    line-height:1.6;
+
+    color:#b7c8dd;
+
+}
+
+/* Kart Konumları */
+
+.card-firewall{
+
+    left:-20px;
+
+    top:70px;
+
+    animation:floatCard1 7s ease-in-out infinite;
+
+}
+
+.card-cloud{
+
+    right:-15px;
+
+    top:120px;
+
+    animation:floatCard2 8s ease-in-out infinite;
+
+}
+
+.card-server{
+
+    left:180px;
+
+    bottom:-10px;
+
+    animation:floatCard3 9s ease-in-out infinite;
+
+}
+
+/*------------------------------------
+        Hero Glow
+------------------------------------*/
+
+.hero-light{
+
+    position:absolute;
+
+    width:700px;
+
+    height:700px;
+
+    border-radius:50%;
+
+    left:50%;
+
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    background:
+
+    radial-gradient(circle,
+
+    rgba(0,180,255,.12),
+
+    rgba(0,100,255,.05),
+
+    transparent 70%);
+
+    filter:blur(60px);
+
+    animation:lightPulse 6s ease-in-out infinite;
+
+}
+
+/*------------------------------------
+        Tiny Particles
+------------------------------------*/
+
+.particles{
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+}
+
+.particles::before,
+
+.particles::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:4px;
+
+    height:4px;
+
+    border-radius:50%;
+
+    background:#8ed8ff;
+
+    box-shadow:
+
+    80px 120px #8ed8ff,
+
+    220px 70px #8ed8ff,
+
+    360px 160px #8ed8ff,
+
+    520px 260px #8ed8ff,
+
+    640px 140px #8ed8ff,
+
+    800px 320px #8ed8ff,
+
+    980px 220px #8ed8ff;
+
+    animation:particleFloat 20s linear infinite;
+
+    opacity:.7;
+
+}
+
+.particles::after{
+
+    animation-duration:30s;
+
+    opacity:.35;
+
+}
+
+/*------------------------------------
+        Hero Entrance
+------------------------------------*/
+
+.hero-content>*{
+
+    opacity:0;
+
+    transform:translateY(35px);
+
+    animation:heroFade .8s forwards;
+
+}
+
+.hero-badge{
+
+    animation-delay:.15s;
+
+}
+
+.hero h1{
+
+    animation-delay:.35s;
+
+}
+
+.hero p{
+
+    animation-delay:.55s;
+
+}
+
+.hero-buttons{
+
+    animation-delay:.75s;
+
+}
+
+.hero-stats{
+
+    animation-delay:.95s;
+
+}
+
+.hero-visual{
+
+    opacity:0;
+
+    transform:scale(.92);
+
+    animation:heroVisual 1.2s forwards;
+
+    animation-delay:.8s;
+
+}
+
+/*------------------------------------
+        Hover Effect
+------------------------------------*/
+
+.network-scene{
+
+    transition:transform .35s ease;
+
+}
+
+.hero:hover .network-scene{
+
+    transform:translateY(-6px);
+
+}
+
+/*------------------------------------
+        Button Shine
+------------------------------------*/
+
+.btn-primary{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.btn-primary::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-120%;
+
+    top:0;
+
+    width:70%;
+
+    height:100%;
+
+    background:
+
+    linear-gradient(
+
+    90deg,
+
+    transparent,
+
+    rgba(255,255,255,.45),
+
+    transparent);
+
+    transform:skewX(-20deg);
+
+}
+
+.btn-primary:hover::before{
+
+    left:150%;
+
+    transition:1.2s;
+
+}
+
+/*------------------------------------
+        Animations
+------------------------------------*/
+
+@keyframes heroFade{
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes heroVisual{
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+@keyframes floatCard1{
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+}
+
+@keyframes floatCard2{
+
+    50%{
+
+        transform:translateY(12px);
+
+    }
+
+}
+
+@keyframes floatCard3{
+
+    50%{
+
+        transform:translateY(-8px);
+
+    }
+
+}
+
+@keyframes lightPulse{
+
+    50%{
+
+        transform:translate(-50%,-50%) scale(1.08);
+
+    }
+
+}
+
+@keyframes particleFloat{
+
+    from{
+
+        transform:translateY(0);
+
+    }
+
+    to{
+
+        transform:translateY(-80px);
+
+    }
+
+}
+
+/*==================================================
+            HERO V2 - PART 4
+      Responsive + Final Polish
+==================================================*/
+
+/* Büyük ekranlar */
+
+@media (min-width:1600px){
+
+.hero .container{
+
+max-width:1500px;
+
+}
+
+.hero h1{
+
+font-size:78px;
+
+}
+
+.network-scene{
+
+transform:scale(1.1);
+
+}
+
+}
+
+/* Laptop */
+
+@media (max-width:1200px){
+
+.hero-wrapper{
+
+grid-template-columns:1fr;
+
+gap:60px;
+
+text-align:center;
+
+}
+
+.hero-content{
+
+margin:auto;
+
+}
+
+.hero p{
+
+margin-left:auto;
+margin-right:auto;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+.hero-stats{
+
+justify-content:center;
+
+}
+
+.hero-visual{
+
+min-height:520px;
+
+}
+
+.hero-card{
+
+display:none;
+
+}
+
+}
+
+/* Tablet */
+
+@media (max-width:992px){
+
+.hero{
+
+padding:140px 0 80px;
+
+min-height:auto;
+
+}
+
+.hero h1{
+
+font-size:52px;
+
+line-height:1.15;
+
+}
+
+.hero p{
+
+font-size:17px;
+
+}
+
+.network-scene{
+
+width:440px;
+
+height:440px;
+
+}
+
+.planet{
+
+width:260px;
+height:260px;
+
+}
+
+.ring1{
+
+width:300px;
+height:300px;
+
+}
+
+.ring2{
+
+width:360px;
+height:360px;
+
+}
+
+.ring3{
+
+width:420px;
+height:420px;
+
+}
+
+/* Node konumları */
+
+.n1{left:190px;top:72px;}
+.n2{left:82px;top:165px;}
+.n3{right:82px;top:160px;}
+.n4{left:130px;bottom:75px;}
+.n5{right:150px;bottom:72px;}
+
+}
+
+/* Telefon */
+
+@media (max-width:768px){
+
+.hero{
+
+padding-top:120px;
+
+}
+
+.hero-wrapper{
+
+gap:40px;
+
+}
+
+.hero h1{
+
+font-size:40px;
+
+letter-spacing:-1px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+line-height:1.8;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.hero-buttons .btn{
+
+width:260px;
+
+text-align:center;
+
+}
+
+.hero-stats{
+
+flex-wrap:wrap;
+
+gap:25px;
+
+}
+
+.network-scene{
+
+width:340px;
+
+height:340px;
+
+}
+
+.planet{
+
+width:210px;
+
+height:210px;
+
+}
+
+.ring1{
+
+width:240px;
+
+height:240px;
+
+}
+
+.ring2{
+
+width:280px;
+
+height:280px;
+
+}
+
+.ring3{
+
+width:330px;
+
+height:330px;
+
+}
+
+.network-lines{
+
+opacity:.55;
+
+}
+
+}
+
+/* Küçük telefon */
+
+@media (max-width:480px){
+
+.hero{
+
+padding:110px 0 60px;
+
+}
+
+.hero h1{
+
+font-size:32px;
+
+}
+
+.hero-badge{
+
+font-size:13px;
+
+padding:10px 16px;
+
+}
+
+.hero p{
+
+font-size:15px;
+
+}
+
+.network-scene{
+
+width:280px;
+
+height:280px;
+
+}
+
+.planet{
+
+width:170px;
+
+height:170px;
+
+}
+
+.ring1{
+
+width:200px;
+
+height:200px;
+
+}
+
+.ring2{
+
+width:230px;
+
+height:230px;
+
+}
+
+.ring3{
+
+width:260px;
+
+height:260px;
+
+}
+
+.node{
+
+width:12px;
+
+height:12px;
+
+}
+
+.hero::before{
+
+background-size:40px 40px;
+
+}
+
+}
+
+/* Scroll performansı */
+
+.hero,
+.network-scene,
+.planet,
+.ring{
+
+will-change:transform;
+
+}
+
+/* SVG çizgilerini yumuşat */
+
+.network-lines line{
+
+filter:drop-shadow(0 0 8px rgba(73,199,255,.45));
+
+}
+
+/* Seçim rengi */
+
+::selection{
+
+background:#0ea5e9;
+
+color:#fff;
+
+}
 .hero-content{
 
 max-width:650px;
