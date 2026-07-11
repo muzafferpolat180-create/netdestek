@@ -375,13 +375,13 @@ section h2{
 
     display:grid;
 
-    grid-template-columns:1.1fr .9fr;
+    grid-template-columns:48% 52%;
 
     align-items:center;
 
-    gap:70px;
+    gap:20px;
 
-    padding-top:170px;
+    padding-top:140px;
 
 }
 
@@ -443,7 +443,11 @@ section h2{
 
     position:relative;
 
-    text-align:center;
+    display:flex;
+
+    justify-content:flex-end;
+
+    align-items:center;
 
 }
 
@@ -451,11 +455,11 @@ section h2{
 
     width:100%;
 
-    max-width:620px;
+    max-width:900px;
 
-    border-radius:28px;
+    border-radius:0;
 
-    box-shadow:0 25px 60px rgba(0,0,0,.22);
+    box-shadow:none;
 
     transition:.5s;
 
@@ -1188,5 +1192,173 @@ border-radius:20px;
 ::-webkit-scrollbar-thumb:hover{
 
 background:#2563eb;
+
+}
+
+/*================ PROGRESS BAR ================*/
+
+#progress-bar{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:0;
+
+height:4px;
+
+background:linear-gradient(90deg,#2563eb,#38bdf8);
+
+z-index:99999;
+
+transition:.15s;
+
+}
+
+/*================ BACK TO TOP ================*/
+
+#backToTop{
+
+position:fixed;
+
+right:30px;
+
+bottom:105px;
+
+width:55px;
+
+height:55px;
+
+border:none;
+
+border-radius:50%;
+
+background:#2563eb;
+
+color:#fff;
+
+font-size:20px;
+
+cursor:pointer;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+opacity:0;
+
+visibility:hidden;
+
+transition:.35s;
+
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+z-index:998;
+
+}
+
+#backToTop.show{
+
+opacity:1;
+
+visibility:visible;
+
+}
+
+#backToTop:hover{
+
+transform:translateY(-4px);
+
+background:#1d4ed8;
+
+}
+
+/*=========================================
+HERO FLOAT ANIMATION
+=========================================*/
+
+.hero-right img{
+
+animation:heroFloat 6s ease-in-out infinite;
+
+transition:.4s ease;
+
+cursor:pointer;
+
+}
+
+.hero-right img:hover{
+
+transform:scale(1.04);
+
+filter:drop-shadow(0 25px 70px rgba(0,140,255,.45));
+
+}
+
+@keyframes heroFloat{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+}
+
+.hero-right{
+
+position:relative;
+
+}
+
+.hero-right::before{
+
+content:"";
+
+position:absolute;
+
+width:700px;
+
+height:700px;
+
+background:radial-gradient(circle,
+rgba(0,120,255,.22),
+transparent 70%);
+
+filter:blur(50px);
+
+z-index:-1;
+
+animation:heroGlow 5s ease-in-out infinite;
+
+}
+
+@keyframes heroGlow{
+
+0%,100%{
+
+transform:scale(1);
+
+opacity:.6;
+
+}
+
+50%{
+
+transform:scale(1.2);
+
+opacity:1;
+
+}
 
 }
